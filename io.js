@@ -26,8 +26,8 @@ IoEngine.Utils.curryFunction = function(func, args){
   }
 };
 
-load('core/parser.js');
+load('core/runtime.js');
 load('core/node.js');
+load('core/parser.js');
 load('core/scope.js');
 load('core/interpreter.js');
-load('core/runtime.js');

@@ -12,5 +12,5 @@ var map = io.Map.clone();
 map.atPut('hoge', 'foo');
 map.atPut('foo', 'bar');
 map.each(IoRuntime.Io.Block.create(function(value, key){
-  print(value+ ':' + key);
+  print(value + ':' + key);
 }));

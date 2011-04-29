@@ -56,7 +56,7 @@ IoEngine.Interpreter.prototype.executeQuote = function (node, runtime, context){
   return runtime.io.String.clone(node.quote);
 };
 IoEngine.Interpreter.prototype.executeArguments = function (node, runtime, context){
-  print('args');
+  return runtime.io.List.clone(node.args);
 };
 IoEngine.Interpreter.prototype.executeEol = function (node, runtime, context){
   var args = context.values;
@@ -75,4 +75,3 @@ IoEngine.Interpreter.prototype.executeEol = function (node, runtime, context){
     context.push(latestObj);
   }
 };
-
